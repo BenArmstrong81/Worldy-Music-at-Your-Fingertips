@@ -17,10 +17,12 @@ fetch(requestUrl)
     return response.json();
   })
   .then(function (data) {
-    
+    document.querySelector("#preloader").style.display = "none"//stop the load
     var countrys = [];
     let activities = [];
     
+    var countrys = [];
+    let activities = [];
     for (var i = 0; i < data.length; i++) {
       countrys.push(data[i].country, data[i].countrycode);
       activities.push([data[i].country, data[i].countrycode]);

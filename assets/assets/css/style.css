@@ -23,8 +23,13 @@ body {
   color: white;
 }
 
-
-
+#preloader {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(3,24,41,255) url('/assets/images/worldloader.gif') no-repeat center;
+	z-index: 999;
+}
 
 [class*="col-"] {
   float: left;
